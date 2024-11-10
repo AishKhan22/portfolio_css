@@ -10,7 +10,7 @@ const Contact = () => {
             <div className='space-y-8'> 
                 <h2 className='text-3xl'>  Get in touch </h2>
                 <p className='text-[#6A1E55] text-[18px] pt-2'>
-                Don't hesitate to reach out via email or phone
+                Do not hesitate to reach out via email or phone
                 </p>
                 <div className='flex gap-3 items-center'>
                   <AiOutlineMail size={25} /> aish.khan712@gmail.com </div>
