@@ -1,0 +1,58 @@
+/* Card.css */
+
+/* Main card container */
+.card-container {
+    border: 1px solid #6A1E55;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 640px) {
+    .card-container {
+      width: 350px;
+    }
+  }
+  
+  /* Image wrapper */
+  .card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Content wrapper */
+  .card-content {
+    padding: 16px; /* Equivalent to p-4 */
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Equivalent to space-y-4 */
+  }
+  
+  /* Title styling */
+  .card-title {
+    font-size: 2rem; /* Equivalent to text-4xl */
+    font-weight: 200; /* Equivalent to font-extralight */
+    color: #333; /* Optional, ensures good contrast */
+  }
+  
+  /* Description styling */
+  .card-desc {
+    color: #444;
+  }
+  
+  /* Tags wrapper */
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap; /* Ensure tags wrap if they exceed width */
+    gap: 8px; /* Spacing between tags */
+  }
+  
+  /* Individual tag styling */
+  .tag {
+    background-color: #6A1E55;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px; /* Optional, makes tags slightly rounded */
+    font-size: 12px;
+  }
+  

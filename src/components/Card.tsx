@@ -1,40 +1,38 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
- 
-
+import './Card.css'; // Import custom CSS file
 
 interface propsType {
-    title: string;
-    desc: string;
-    img: string;
-    tags: string[];
+  title: string;
+  desc: string;
+  img: string;
+  tags: string[];
 }
 
-const Card: React.FC<propsType> = ({title, desc, img, tags}) => {
+const Card: React.FC<propsType> = ({ title, desc, img, tags }) => {
   return (
-    <div className='border border-[#6A1E55] w-[300px] sm:w-[350px]'>
-        <div> 
-            <Image className='w-[300px] sm:w-[350px] h-auto' 
-            src={img}
-            width={350}
-            height={350}
-            alt={title}
-            /> 
+    <div className="card-container">
+      <div className="card-image">
+        <Image
+          src={img}
+          width={350}
+          height={350}
+          alt={title}
+        />
+      </div>
+      <div className="card-content">
+        <div className="card-title">{title}</div>
+        <div className="card-desc">{desc}</div>
+        <div className="card-tags">
+          {tags.map((el) => (
+            <div className="tag" key={el}>
+              {el}
+            </div>
+          ))}
         </div>
-    <div className='p-4 space-y-4'> 
-    <div className='text-4xl font-extralight'> {title} </div>
-    <div> {desc} </div>
-    <div> 
-        {tags.map((el) => (
-            <div className='tags' key={el}> 
-             {el}   
-            </div>))}
+      </div>
     </div>
-    </div>
+  );
+};
 
-    </div>
-    
-  )
-}
-
-export default Card
+export default Card;

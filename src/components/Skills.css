@@ -1,0 +1,68 @@
+/* Skills.css */
+
+/* Container for the skills section */
+.skills-container {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+/* Content section for skills */
+.skills-content {
+    display: grid;
+    gap: 1rem;
+    padding: auto;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+/* Title for the skills section */
+.skills-title {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #6A1E55;
+    margin-bottom: 1rem;
+}
+
+/* Description for the skills section */
+.skills-description {
+    color: #605678;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* List of skills */
+.skills-list {
+    display: grid;
+    gap: 5px
+}
+
+/* Individual skills */
+.skills-item {
+    background-color: #6A1E55;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 2px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .skills-container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .skills-title {
+        font-size: 2.5rem;
+    }
+
+    .skills-description {
+        font-size: 1rem;
+    }
+}

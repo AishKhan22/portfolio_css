@@ -1,0 +1,27 @@
+/* About.css */
+
+/* Container styling */
+.container {
+    padding-top: 2rem; 
+  }
+  
+  /* Heading styling */
+  .heading {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    color: #6A1E55;
+  }
+  
+  /* Medium screens and larger */
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 2.25rem; /* Equivalent to md:text-4xl */
+    }
+  }
+  
+  /* Paragraph styling */
+  .description {
+    color: #3B1C32;
+    padding-top: 10px; 
+    padding-bottom: 20px/* Equivalent to pb-4 */
+  }
+  

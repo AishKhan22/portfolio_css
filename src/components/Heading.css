@@ -1,0 +1,16 @@
+/* Heading.css */
+
+/* Center the heading container */
+.heading-container {
+    text-align: center; /* Equivalent to Tailwind's text-center */
+    font-size: 2.5rem; /* Equivalent to text-4xl */
+    margin-bottom: 2rem; /* Space below heading */
+  }
+  
+  /* Style the heading title */
+  .heading-title {
+    display: inline-block; /* Keep border confined to the title */
+    padding-bottom: 0.5rem; /* Equivalent to pb-2 */
+    border-bottom: 4px solid black; /* Border styling */
+  }
+  

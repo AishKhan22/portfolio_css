@@ -1,0 +1,66 @@
+/* Project.css */
+
+/* Container for the projects section */
+.project-container {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    width: 50%;
+    margin: auto;
+}
+
+/* Grid for the project cards */
+.project-grid {
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+/* Card Styling */
+.project-card {
+    border: 3px solid #6A1E55;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  
+}
+
+/* Heading Styling */
+.project-heading {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6A1E55;
+    margin-bottom: 2rem;
+}
+
+/* Tags styling */
+.project-tag {
+    background-color: #6A1E55;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-right: 8px;
+    margin-top: 8px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.project-tag:nth-child(2) {
+    background-color: #BC7C7C;
+}
+
+.project-tag:nth-child(3) {
+    background-color: #B03052;
+}
+
+.project-tag:nth-child(4) {
+    background-color: #9B7EBD;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

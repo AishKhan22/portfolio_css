@@ -1,0 +1,53 @@
+/* Contact.css */
+
+/* Main container for the contact section */
+.contact-container {
+    padding-top: 5rem; 
+    padding-bottom: 5rem; /* Equivalent to pb-20 */
+    margin: 0 auto; /* Center content */
+    max-width: 1200px; /* Restrict width */
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Grid styling */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 20px;
+  } 
+  
+  @media (min-width: 768px) {
+    .contact-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens and up */
+    }
+  }
+  
+  /* Contact details wrapper */
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  /* Title styling */
+  .contact-title {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    color: #000;
+  }
+  
+  /* Description styling */
+  .contact-description {
+    color: #6A1E55; /* Custom purple */
+    font-size: 1.125rem; /* Equivalent to text-[18px] */
+    padding-top: 0.5rem; /* Equivalent to pt-2 */
+  }
+  
+  /* Individual contact item */
+  .contact-item {
+    display: flex;
+    align-items: center; /* Equivalent to items-center */
+    gap: 1rem; /* Equivalent to gap-3 */
+    font-size: 1rem;
+    color: #000;
+  }
+  

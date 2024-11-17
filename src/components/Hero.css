@@ -1,0 +1,104 @@
+/* Hero Section Styles */
+#hero {
+  min-height: 100vh;
+  background-image: url('/profile.png');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  border-radius: 50px;
+  border: 4px solid #000;
+  background-position: left 100px top 200px;
+}
+
+/* Flexbox for Hero Container */
+.hero-container {
+  display: flex;
+  flex-direction: column;  /* Stack content vertically */
+  justify-content: center;  /* Center content vertically */
+  align-items: center;  /* Center content horizontally */
+  height: 100%;
+  padding: 0 20px;  /* Add padding to avoid content sticking to edges */
+}
+
+/* Grid for Hero Content */
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column for mobile screens */
+  height: calc(100vh - 60px);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+/* Placeholder for Hero Content */
+.hero-placeholder {
+  display: none; /* Hidden by default */
+}
+
+/* Hero Text Styles */
+.hero-text {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration:underline;
+  font-size: 40px; /* Default smaller font size */
+  font-weight: bold;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  /* Centered text for small screens */
+  flex-direction: column;  /* Stack the text vertically */
+  gap: 0.5rem;
+}
+
+.hero-text div p {
+  margin: 0;
+}
+
+/* Media Query for Larger Screens (Tablets and up) */
+@media (min-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr 1fr;  /* 2 columns for medium screens */
+  }
+
+  .hero-text {
+    font-size: 60px;  /* Slightly larger text for medium screens */
+  }
+
+  .hero-placeholder {
+    display: block;  /* Show placeholder on medium and larger screens */
+  }
+
+  #hero {
+    background-size: 25%;  /* Adjust background size for medium screens */
+  }
+}
+
+/* Media Query for Large Screens (Desktops) */
+@media (min-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr 1fr;  /* 2 columns for larger screens */
+  }
+
+  .hero-text {
+    font-size: 80px;  /* Larger text for larger screens */
+  }
+
+  .hero-placeholder {
+    display: block;  /* Show placeholder on larger screens */
+  }
+
+  #hero {
+    background-size: 20%;  /* Adjust background size for large screens */
+  }
+}
+
+/* For Very Large Screens (extra-large desktops) */
+@media (min-width: 1440px) {
+  .hero-text {
+    font-size: 100px;  /* Largest text for extra-large screens */
+  }
+
+  #hero {
+    background-size: 20%;  /* Adjust background size for extra-large screens */
+  }
+}
