@@ -5,25 +5,26 @@ import './Contact.css'; // Import custom CSS
 
 const Contact = () => {
   return (
-    <div id="contact" className="contact-container">
-      <div className="contact-grid">
-        <div className="contact-details">
-          <h2 className="contact-title">Get in touch</h2>
-          <p className="contact-description">
-            Don't hesitate to reach out via email or phone
-          </p>
-          <div className="contact-item">
-            <AiOutlineMail size={25} />
-            <span>aish.khan712@gmail.com</span>
-          </div>
-          <div className="contact-item">
-            <BsTelephone size={25} />
-            <span>090078601</span>
-          </div>
+    <div id='contact' className='pt-32 container pb-20' >
+        <div className=' grid md:grid-cols-2 gap-10'>
+            <div className='space-y-8'> 
+                <h2 className='text-3xl'>  Get in touch </h2>
+                <p className='text-[#6A1E55] text-[18px] pt-2'>
+                Don't hesitate to reach out via email or phone
+                </p>
+                <div className='flex gap-3 items-center'>
+                  <AiOutlineMail size={25} /> aish.khan712@gmail.com </div>
+
+                  <div className='flex gap-3 items-center'>
+                  <BsTelephone size={25} /> 090078601 </div>
+            
+            </div>
+            
+        </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default Contact
